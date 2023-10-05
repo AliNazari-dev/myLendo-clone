@@ -1,9 +1,12 @@
-import React from 'react'
+import EmptyState from "@/components/EmptyState";
+import React from "react";
 
-const page = () => {
+const Home = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className='z-50 bg-white bg-opacity-[0.9] w-full rounded-xl py-10 '>
+      <EmptyState />
+    </div>
+  );
+};
 
-export default page
+export default Home;
