@@ -27,12 +27,14 @@ const CreateOrder = () => {
       />
       <hr className='border-2 border-[#DFE1F3]' />
       <div className=''>
-        <span className='font-medium text-sm text-[#3d3d3d] '>
+        <p className='font-medium text-sm text-[#3d3d3d] '>
           لطفاً قبل از پرداخت صورتحساب، به نکات زیر توجه فرمایید:
-        </span>
+        </p>
         <ul className='list-disc text-[#3d3d3d] font-medium  text-sm'>
           {CreateOrderCondition.map((item) => (
-            <li className='my-6'>{item.label}</li>
+            <li className='my-6' key={item.label}>
+              {item.label}
+            </li>
           ))}
         </ul>
         <hr className='border-2 border-[#DFE1F3]' />

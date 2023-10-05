@@ -53,7 +53,7 @@ const Sidbartest: React.FC<SidbarProps> = ({ children }) => {
   return (
     <div className='flex min-w-fit h-full mx-4 justify-end gap-x-5 '>
       {/* div for responsiving Design */}
-      <div className='flex flex-col h-full w-[100px] xl:w-[350px]  mt-2 z-10 shadow-xl rounded-t-3xl'>
+      <div className='md:flex flex-col h-full w-[100px] xl:w-[350px]  mt-2 z-10 shadow-xl rounded-t-3xl hidden'>
         <div className='bg-userInfo h-[102px] flex justify-center items-center rounded-t-2xl'>
           <Box className='xl:max-w-[250px] xl:min-h-[80px]'>
             <Image
