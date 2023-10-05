@@ -3,11 +3,11 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className='hidden 2xl:block'>
-      <div className='flex relative h-[90px] '>
+    <div className='hidden xl:block relative'>
+      <div className='relative h-[90px]'>
         <Image
           className='w-full min-h-[200px] rounded-xl shadow-xl shadow-gray-400'
-          src={"./svgexport-1.svg"}
+          src={"/Headerimage.jpg"}
           alt=''
           width={100}
           height={300}
