@@ -16,16 +16,7 @@ interface ButtonProps {
   className?: string;
 }
 
-const Button: React.FC<ButtonProps> = ({
-  label,
-  onClick,
-  active,
-  outline,
-  icon,
-  src,
-  href,
-  className,
-}) => {
+const Button: React.FC<ButtonProps> = ({ label, onClick, active, icon, src, href, className }) => {
   return (
     <div className={`${active && "opacity-90"}`}>
       <Link
@@ -34,7 +25,7 @@ const Button: React.FC<ButtonProps> = ({
           `items-center justify-center align-middle flex flex-row gap-3`,
           className
         )}>
-        {src && <Image src={src} alt={label} width={20} height={20} className='' />}
+        {src && <Image src={src} alt={label} width={30} height={30} className='opacity-80' />}
         <button>{label}</button>
       </Link>
     </div>
