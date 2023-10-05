@@ -2,3 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
+.bg-userInfo {
+  background: linear-gradient(
+    92.86deg,
+    #fff9ef -36.94%,
+    #e9f1f5 -3.17%,
+    #c6e5ff 34.45%,
+    #fff9ef 153.42%
+  );
+}
+
+.box-bg {
+  background: linear-gradient(
+    97.16deg,
+    #e8f5ff -10.55%,
+    #ffffff 56.12%,
+    #ffffff 84.25%,
+    #ffffff 106.88%
+  );
+}
+
