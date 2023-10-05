@@ -6,6 +6,7 @@ import { useMemo } from "react";
 import Box from "./Box";
 import SideBarItems from "./SideBarItems";
 import UseInfo from "./UseInfo";
+import Image from "next/image";
 
 interface SidbarProps {
   children: React.ReactNode;
@@ -50,14 +51,21 @@ const Sidbartest: React.FC<SidbarProps> = ({ children }) => {
     [pathname]
   );
   return (
-    <div className='flex min-w-fit h-full mx-4  justify-end gap-x-5'>
+    <div className='flex min-w-fit h-full mx-4 justify-end gap-x-5 '>
       {/* div for responsiving Design */}
-      <div className='flex flex-col  h-full w-[350px] mt-2 z-10 shadow-xl  rounded-t-3xl'>
-        <div
-          className='bg-userInfo 
-          h-[102px] flex justify-center items-center rounded-t-2xl'>
-          <Box className='max-w-[250px] min-h-[80px]'>
-            <UseInfo />
+      <div className='flex flex-col h-full w-[100px] xl:w-[350px]  mt-2 z-10 shadow-xl rounded-t-3xl'>
+        <div className='bg-userInfo h-[102px] flex justify-center items-center rounded-t-2xl'>
+          <Box className='xl:max-w-[250px] xl:min-h-[80px]'>
+            <Image
+              className='block xl:hidden'
+              src={"./GhestaSidbarIcon.svg"}
+              width={100}
+              height={100}
+              alt='GhestaSidbarIcon'
+            />
+            <div className='hidden xl:block'>
+              <UseInfo />
+            </div>
           </Box>
         </div>
         <Box className='overflow-y-auto min-h-[700px] bg-white'>

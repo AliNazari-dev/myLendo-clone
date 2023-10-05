@@ -14,11 +14,11 @@ const UseInfo = () => {
           alt='user Image'
         />
       </div>
-      <div className='text-right'>
+      <div className='text-right hidden xl:block'>
         <p className='font-medium text-blue-950'>علی نظری</p>
         <p className='text-xs font-medium'>9901133006</p>
       </div>
-      <div className='bg-blue-500 flex rounded-2xl h-[40px] w-[40px] justify-center'>
+      <div className='bg-blue-500 xl:flex rounded-2xl h-[40px] w-[40px] justify-center hidden '>
         <Image src={"/svgexport-8.svg"} width={30} height={30} alt='user Image' />
       </div>
     </div>
