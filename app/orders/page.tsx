@@ -15,8 +15,8 @@ const page = () => {
   );
 
   return (
-    <div className='container z-50 flex flex-col'>
-      <div className='UprBar bg-userInfo  w-full rounded-t-xl h-[104px] '></div>
+    <div className='w-full z-50 flex flex-col'>
+      <div className='UprBar bg-userInfo rounded-t-xl h-[104px] '></div>
       <div
         className='
         z-50 bg-white w-full p-10 flex justify-center items-center '>

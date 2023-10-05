@@ -5,9 +5,9 @@ import Button from "./Button";
 
 const EmptyState = () => {
   return (
-    <div className='h-full flex justify-center flex-col items-center mt-10 gap-y-5'>
+    <div className='h-full flex justify-center flex-col items-center mt-10 gap-y-10'>
       <div className='flex'>
-        <Image src={"./svgexport-14.svg"} objectFit='cover' alt='' width={500} height={500} />
+        <Image src={"./svgexport-14.svg"} alt='' width={500} height={500} />
       </div>
       <div className='flex flex-col gap-5 max-w-[364px] w-full text-center text-gray-800 '>
         <p className='text-xl '>هنوز موفق به ثبت سفارش وام قسطا نشده اید؟</p>
